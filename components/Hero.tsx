@@ -27,10 +27,10 @@ const Hero = ({isScrolled}:Props) => {
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold dark:text-purple-300" ><span className="dark:text-white" >Nexora AI</span> keeps your agents moving while you work.</h1>
         <p className="text-xl dark:text-purple-400" >Create AI Agents that use tools, follow schedules, run repeatable tasks and report back with the signal your team needs.</p>
         <div className="flex items-center mt-5 gap-5 w-full ">
-          <button onClick={()=> navigate("/dashboard/agents")} className="flex gap-3 items-center justify-center px-3 py-2 rounded-xl dark:bg-purple-700 hover:dark:bg-purple-900 hover:border dark:border-purple-500 dark:text-purple-300 cursor-pointer hover:scale-110 transition-all duration-500  ">
+          <button onClick={()=> navigate("/dashboard/agents")} className="flex gap-3 items-center justify-center px-3 py-2 rounded-xl bg-purple-500 text-white dark:bg-purple-700 hover:dark:bg-purple-900 hover:border dark:border-purple-500 dark:text-purple-300 cursor-pointer hover:scale-110 transition-all duration-500  ">
             Manage Agents <ArrowRight className="size-5" />
           </button>
-          <button onClick={()=> navigate("/dashboard/play")} className="flex gap-3 items-center justify-center px-3 py-2 rounded-xl border dark:border-purple-400 dark:text-purple-300 cursor-pointer hover:scale-110 transition-all duration-500  ">
+          <button onClick={()=> navigate("/dashboard/play")} className="flex gap-3 items-center justify-center px-3 py-2 rounded-xl border border-purple-600 text-purple-700 dark:border-purple-400 dark:text-purple-300 cursor-pointer hover:scale-110 transition-all duration-500  ">
             View Run <Play className="size-5" />
           </button>
         </div>
@@ -46,10 +46,10 @@ const Hero = ({isScrolled}:Props) => {
         </div>
       </div>
       </div>
-      <div className="flex mt-10 xl:mt-0 flex-1/2 items-center justify-center w-full h-full dark:bg-purple-600 rounded-xl shadow-xl">
+      <div className="flex mt-10 xl:mt-0 flex-1/2 items-center justify-center w-full h-full bg-gray-400 dark:bg-purple-600 rounded-xl shadow-xl">
         <div className="flex flex-col items-start justify-center w-full   ">
           <div className="flex items-center justify-start px-3 lg:px-5  gap-1 py-2 ">
-            {colors.map((item)=><div key={item} className={`${item} size-4 rounded-full border dark:border-purple-700`} />)}
+            {colors.map((item)=><div key={item} className={`${item} size-4 rounded-full border border-white dark:border-purple-700`} />)}
           </div>
 
           <div className="flex items-center justify-center  ">

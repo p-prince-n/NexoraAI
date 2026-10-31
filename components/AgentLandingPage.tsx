@@ -29,6 +29,7 @@ import {
 } from "lucide-react";
 
 import type { LucideIcon } from "lucide-react";
+import Link from "next/link";
 
 export const integrations: {
   name: string;
@@ -206,7 +207,6 @@ export default function AgentLandingPage() {
 
    
 
-      {/* ================= AGENTS ================= */}
       <section
         id="agents"
         className="scroll-mt-28 relative px-4 pb-24 pt-24 sm:px-6 sm:pt-32 lg:px-8"
@@ -358,7 +358,6 @@ export default function AgentLandingPage() {
         </div>
       </section>
 
-      {/* ================= WORKFLOW ================= */}
       <section
         id="workflow"
         className="scroll-mt-28 border-y border-gray-200 bg-gray-50 px-4 py-24 dark:border-[#302044] dark:bg-[#140C22] sm:px-6 lg:px-8"
@@ -473,7 +472,6 @@ export default function AgentLandingPage() {
         </div>
       </section>
 
-      {/* ================= INTEGRATIONS ================= */}
       <section
         id="integrations"
         className="scroll-mt-28 relative px-4 py-24 sm:px-6 lg:px-8"
@@ -621,13 +619,13 @@ export default function AgentLandingPage() {
               and experience a smarter way to get work done.
             </p>
 
-            <a
-              href="/dashboard/agents/create"
+            <Link
+              href="/dashboard/agents"
               className="mt-8 inline-flex items-center gap-2 rounded-xl bg-white px-7 py-3.5 font-semibold text-purple-700 transition-all duration-300 hover:-translate-y-1 hover:bg-purple-50 hover:shadow-xl"
             >
               Create your agent
               <ArrowRight size={18} />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
